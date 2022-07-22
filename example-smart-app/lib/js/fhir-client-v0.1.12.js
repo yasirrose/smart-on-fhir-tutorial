@@ -17017,7 +17017,7 @@ function completeCodeFlow(params){
   } else {
     data['client_id'] = state.client.client_id;
   }
-
+alert(state.provider.oauth2.token_uri);
   Adapter.get().http({
     method: 'POST',
     url: state.provider.oauth2.token_uri,
