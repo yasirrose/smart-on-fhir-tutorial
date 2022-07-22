@@ -17011,7 +17011,7 @@ function completeCodeFlow(params){
   };
 
   var headers = {};
-
+alert(state.client.secret);
   if (state.client.secret) {
     headers['Authorization'] = 'Basic ' + btoa(state.client.client_id + ':' + state.client.secret);
   } else {
