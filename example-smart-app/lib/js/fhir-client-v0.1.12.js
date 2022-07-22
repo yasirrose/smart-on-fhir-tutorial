@@ -7294,7 +7294,8 @@ jQuery.extend({
 	noop: function() {},
 
 	// See test/unit/core.js for details concerning isFunction.
-	// Since version 1.3, DOM methods and functions like alert
+	// Since version 1.3, DOM methods and functions like 
+	
 	// aren't supported. They return false on IE (#2968).
 	isFunction: function( obj ) {
 		return jQuery.type(obj) === "function";
@@ -17011,13 +17012,13 @@ function completeCodeFlow(params){
   };
 
   var headers = {};
-alert(state.client.secret);
+//alert(state.client.secret);
   if (state.client.secret) {
     headers['Authorization'] = 'Basic ' + btoa(state.client.client_id + ':' + state.client.secret);
   } else {
     data['client_id'] = state.client.client_id;
   }
-alert(state.provider.oauth2.token_uri);
+//alert(state.provider.oauth2.token_uri);
   Adapter.get().http({
     method: 'POST',
     url: state.provider.oauth2.token_uri,
